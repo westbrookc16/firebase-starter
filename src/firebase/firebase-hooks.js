@@ -19,6 +19,6 @@ export const useAuthState = auth => {
 			}
 		});
 		return listener;
-	}, []);
+	}, [user, auth]);
 	return user;
 };
